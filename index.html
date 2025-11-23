@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport", content="width=device-width, initial-scale = 1.0">
     <title>Rock Paper Sicssors</title>
-    <link rel="stylesheet" href="rock_paper_scissors.css">
+    <link rel="stylesheet" href="css/rock_paper_scissors.css">
   </head>
   <body>
     <header>
       <div class="headerContent">
+        <div>
+          <button class="back" onclick="location.href = 'index.html'">Back</button>
+        </div>
         <div class="RPSHeader">
           <h1>Rock Paper Scissors</h1>
         </div>
@@ -17,11 +20,11 @@
     </header>
     <main>
       <div class="rockPaperSicssorsButtons">
-        <button onclick="startGame('Rock')">✊</button>
+        <button id="rock_button">✊</button>
 
-        <button onclick="startGame('Paper')">✋</button>
+        <button id="paper_button">✋</button>
 
-        <button onclick="startGame('Scissors')">✌️</button>
+        <button id="scissors_button">✌️</button>
       </div>
 
       <div class="RPSResults">
@@ -33,10 +36,16 @@
           <p class="rps_score"></p>
         </div>
       </div><br>
-
-        <button class="resetScoreButton" onclick="resetScore()">Reset Score</button>
+      <div>
+        <div class="resetScoreButton">
+          <button id="resetScoreButton">Reset Score</button>
+        </div>
+        <div class="autoPlayButton">
+          <button id="autoPlayButton">Auto Play</button>
+        </div>
+      </div>
     </main>
     
-    <script class="gameFunctions" src="rock_paper_scissors.js"></script>
+    <script class="gameFunctions" src="js/rock_paper_scissors.js"></script>
   </body>
 </html>
